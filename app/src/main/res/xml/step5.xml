@@ -33,26 +33,33 @@
                     motion:framePosition="25"
                     motion:motionTarget="@id/moon"
                     motion:keyPositionType="parentRelative"
-                    motion:percentY="0.6"
-            />
+                    motion:percentY="0.6"/>
             <KeyPosition
                     motion:framePosition="50"
                     motion:motionTarget="@id/moon"
                     motion:keyPositionType="parentRelative"
-                    motion:percentY="0.5"
-            />
+                    motion:percentY="0.5"/>
             <KeyPosition
                     motion:framePosition="75"
                     motion:motionTarget="@id/moon"
                     motion:keyPositionType="parentRelative"
-                    motion:percentY="0.6"
-            />
-
-            <!-- TODO: Add KeyAttributes to rotate and resize @id/moon -->
-
-
-            <!-- TODO: Add KeyAttribute to delay the appearance of @id/credits -->
-
+                    motion:percentY="0.6"/>
+            <KeyAttribute
+                motion:motionTarget="@+id/moon"
+                motion:framePosition="50"
+                android:scaleX="2.0"
+                android:scaleY="2.0"
+                android:rotationY="-180"/>
+            <KeyAttribute
+                motion:motionTarget="@+id/moon"
+                motion:framePosition="100"
+                android:scaleX="0.3"
+                android:scaleY="0.3"
+                android:rotationY="-180"/>
+            <KeyAttribute
+                motion:motionTarget="@+id/credits"
+                motion:framePosition="85"
+                android:alpha="0.0" />
         </KeyFrameSet>
     </Transition>
 
