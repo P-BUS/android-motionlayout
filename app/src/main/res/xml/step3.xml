@@ -32,6 +32,16 @@
                 motion:framePosition="50"
                 motion:keyPositionType="parentRelative"
                 motion:percentY="0.5" />
+            <KeyPosition
+                motion:motionTarget="@+id/moon"
+                motion:framePosition="30"
+                motion:keyPositionType="parentRelative"
+                motion:percentY="0.6" />
+            <KeyPosition
+                motion:motionTarget="@+id/moon"
+                motion:framePosition="70"
+                motion:keyPositionType="parentRelative"
+                motion:percentY="0.6" />
         </KeyFrameSet>
 
         <!-- TODO: Add KeyFrameSet and KeyPosition -->
